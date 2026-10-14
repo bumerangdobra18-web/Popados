@@ -1,0 +1,27 @@
+{
+  "brand": "ПОПАДОС",
+  "city": "Ижевск",
+  "venue": {
+    "name": "НиСплетни Лаунж",
+    "address": "Ижевск, ул. Максима Горького, 156"
+  },
+  "vk": {
+    "url": "https://vk.ru/club241897850",
+    "groupId": 241897850,
+    "showPostsWidget": true
+  },
+  "ticketscloud": {
+    "token": "eyJhbGciOiJIUzI1NiIsImlzcyI6InRpY2tldHNjbG91ZC5ydSIsInR5cCI6IkpXVCJ9.eyJwIjoiNmFiNmE1NDk2NjAyZGMwOGUzODlhZjcyIn0.opBu7hxny3-gcYMFgH-Bk2Cyn0leC2qxJUJUw2di8nk",
+    "metaEvent": "6acea81717bdb1b133ce0a63",
+    "lang": "ru"
+  },
+  "contacts": {
+    "phone": "",
+    "telegram": "",
+    "email": ""
+  },
+  "leadForm": {
+    "endpoint": "",
+    "privacyPolicyUrl": ""
+  }
+}

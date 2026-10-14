@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ПОПАДОС — музыкальное бинго в Ижевске</title>
+  <meta name="description" content="ПОПАДОС — музыкальная игра в Ижевске: слушайте песни, узнавайте треки, отмечайте их в карточке и соревнуйтесь с друзьями. Расписание игр и билеты онлайн.">
+  <meta name="theme-color" content="#6C4CF1">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/logo/icon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/logo/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="ПОПАДОС — музыкальное бинго в Ижевске">
+  <meta property="og:description" content="Угадай песню. Забери победу. Музыкальная игра для друзей и компаний.">
+  <meta property="og:image" content="assets/img/og-image.png">
+  <link rel="preload" href="assets/fonts/unbounded-cyrillic-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/app.js" defer></script>
+</head>
+<body data-root="./" data-page="home">
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="./" aria-label="ПОПАДОС — на главную">
+        <img src="assets/img/logo/wordmark.svg" alt="ПОПАДОС" width="164" height="23">
+      </a>
+      <nav class="nav" id="site-nav" aria-label="Основное меню">
+        <ul>
+          <li><a href="./" aria-current="page">Главная</a></li>
+          <li><a href="schedule/">Расписание игр</a></li>
+          <li><a href="./#how">Как играть</a></li>
+          <li><a href="./#about">О проекте</a></li>
+          <li><a href="./#corporate">Корпоративы</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-red btn-sm header-cta" href="schedule/">Играть</a>
+      <button class="burger" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Первый экран -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Музыкальное бинго · <span data-site="city">Ижевск</span></p>
+          <h1 class="hero-title">Угадай песню. <span class="accent">Забери победу.</span></h1>
+          <p class="lead">ПОПАДОС — музыкальная игра, где любимые треки превращаются в азартное соревнование.</p>
+          <div class="hero-actions">
+            <a class="btn btn-red btn-lg" href="schedule/">Выбрать игру</a>
+            <a class="btn btn-ghost btn-lg" href="#how">Как это работает</a>
+          </div>
+          <div class="next-game" data-next-game aria-live="polite"></div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <svg class="bingo-card" viewBox="0 0 420 470" role="presentation">
+            <rect x="10" y="10" width="400" height="450" rx="36" fill="#6C4CF1"/>
+            <g fill="#fff">
+              <rect x="44" y="40" width="10" height="26" rx="5"/><rect x="60" y="30" width="10" height="36" rx="5"/><rect x="76" y="46" width="10" height="20" rx="5"/><rect x="92" y="36" width="10" height="30" rx="5"/>
+            </g>
+            <text x="376" y="62" text-anchor="end" fill="#fff" font-family="Unbounded, sans-serif" font-weight="800" font-size="20" letter-spacing="0.5">ПОПАДОС</text>
+            <g id="cells">
+              <rect x="40" y="96" width="76" height="76" rx="16" fill="#fff"/><rect x="128" y="96" width="76" height="76" rx="16" fill="#fff"/><rect x="216" y="96" width="76" height="76" rx="16" fill="#fff"/><rect x="304" y="96" width="76" height="76" rx="16" fill="#fff"/>
+              <rect x="40" y="184" width="76" height="76" rx="16" fill="#fff"/><rect x="128" y="184" width="76" height="76" rx="16" fill="#fff"/><rect x="216" y="184" width="76" height="76" rx="16" fill="#fff"/><rect x="304" y="184" width="76" height="76" rx="16" fill="#fff"/>
+              <rect x="40" y="272" width="76" height="76" rx="16" fill="#fff"/><rect x="128" y="272" width="76" height="76" rx="16" fill="#fff"/><rect x="216" y="272" width="76" height="76" rx="16" fill="#fff"/><rect x="304" y="272" width="76" height="76" rx="16" fill="#fff"/>
+              <rect x="40" y="360" width="76" height="76" rx="16" fill="#fff"/><rect x="128" y="360" width="76" height="76" rx="16" fill="#fff"/><rect x="216" y="360" width="76" height="76" rx="16" fill="#fff"/><rect x="304" y="360" width="76" height="76" rx="16" fill="#fff"/>
+            </g>
+            <g fill="#D5CBFF">
+              <path d="M178 116v28a9 9 0 1 1-5-8v-24l20-5v8z"/>
+              <path d="M90 204v28a9 9 0 1 1-5-8v-24l20-5v8z"/>
+              <path d="M354 380v28a9 9 0 1 1-5-8v-24l20-5v8z"/>
+              <path d="M90 380v28a9 9 0 1 1-5-8v-24l20-5v8z"/>
+              <path d="M354 116v28a9 9 0 1 1-5-8v-24l20-5v8z"/>
+            </g>
+            <g class="chips">
+              <circle cx="78" cy="134" r="27" fill="#F0243F"/><circle cx="78" cy="134" r="7" fill="#fff"/>
+              <circle cx="166" cy="222" r="27" fill="#F0243F"/><circle cx="166" cy="222" r="7" fill="#fff"/>
+              <circle cx="254" cy="310" r="27" fill="#F0243F" opacity=".22"/>
+              <circle cx="342" cy="222" r="27" fill="#F0243F"/><circle cx="342" cy="222" r="7" fill="#fff"/>
+              <circle cx="166" cy="398" r="27" fill="#F0243F"/><circle cx="166" cy="398" r="7" fill="#fff"/>
+              <circle class="chip-drop" cx="254" cy="310" r="27" fill="#F0243F"/><circle class="chip-drop" cx="254" cy="310" r="7" fill="#fff"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ближайшие игры -->
+    <section class="section" id="games" aria-labelledby="games-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="games-title">Ближайшие игры</h2>
+          <a class="link-arrow" href="schedule/">Всё расписание</a>
+        </div>
+        <div class="events-grid" data-events="home" data-limit="3">
+          <p class="loading">Загружаем расписание…</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Как играть -->
+    <section class="section section-tint" id="how" aria-labelledby="how-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="how-title">Как играть</h2>
+          <p class="section-sub">Четыре шага от билета до победы</p>
+        </div>
+        <ol class="steps">
+          <li class="step">
+            <span class="step-num" aria-hidden="true">1</span>
+            <h3>Выбери игру</h3>
+            <p>Найди дату в расписании и купи билет онлайн.</p>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">2</span>
+            <h3>Собери своих</h3>
+            <p>Приходи с друзьями или собери команду.</p>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">3</span>
+            <h3>Слушай и отмечай</h3>
+            <p>Узнал трек — отметь его в своей карточке.</p>
+          </li>
+          <li class="step">
+            <span class="step-num step-num-red" aria-hidden="true">4</span>
+            <h3>Забирай победу</h3>
+            <p>Борись за первое место и наслаждайся вечером.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- О проекте и атмосфера -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about">
+        <div class="about-copy">
+          <h2 id="about-title">Не викторина. Не караоке. <span class="accent-violet">ПОПАДОС.</span></h2>
+          <p>Это вечер, где музыка становится игрой. Хиты, которые вы знаете наизусть, и треки, которые вспоминаются с первых нот, превращаются в соревнование для друзей, коллег и всех, кто любит музыку и немного азарта.</p>
+          <a class="btn btn-violet" data-site-href="vk.url" href="https://vk.ru/club241897850" target="_blank" rel="noopener">Мы во ВКонтакте</a>
+        </div>
+        <div class="gallery" data-gallery></div>
+      </div>
+      <div class="container">
+        <div class="vk-widget" data-vk-widget hidden></div>
+      </div>
+    </section>
+
+    <!-- Корпоративы -->
+    <section class="section section-violet" id="corporate" aria-labelledby="corp-title">
+      <div class="container corp">
+        <div class="corp-copy">
+          <h2 id="corp-title">ПОПАДОС на ваше событие</h2>
+          <p>Проведём музыкальную игру там, где собираются ваши люди.</p>
+          <ul class="tags">
+            <li>Корпоратив</li>
+            <li>День рождения</li>
+            <li>Вечеринка</li>
+            <li>Частное мероприятие</li>
+            <li>Тимбилдинг</li>
+          </ul>
+        </div>
+        <form class="lead-form card" data-lead-form novalidate>
+          <h3>Заказать игру</h3>
+          <div class="field">
+            <label for="lf-name">Имя</label>
+            <input id="lf-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="lf-contact">Телефон или Telegram</label>
+            <input id="lf-contact" name="contact" type="text" autocomplete="tel" required placeholder="+7… или @username">
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="lf-date">Дата мероприятия</label>
+              <input id="lf-date" name="date" type="date">
+            </div>
+            <div class="field">
+              <label for="lf-guests">Участников</label>
+              <input id="lf-guests" name="guests" type="number" min="1" inputmode="numeric">
+            </div>
+          </div>
+          <div class="field">
+            <label for="lf-comment">Комментарий</label>
+            <textarea id="lf-comment" name="comment" rows="3"></textarea>
+          </div>
+          <label class="consent" data-consent hidden>
+            <input type="checkbox" name="consent" required>
+            <span>Соглашаюсь на обработку персональных данных согласно <a data-privacy-link href="#" target="_blank" rel="noopener">политике</a></span>
+          </label>
+          <button class="btn btn-red btn-block" type="submit">Заказать игру</button>
+          <p class="form-status" data-form-status role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container narrow">
+        <h2 id="faq-title">Частые вопросы</h2>
+        <div class="faq" data-faq></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/img/logo/wordmark-white.svg" alt="ПОПАДОС" width="164" height="23">
+        <p>Музыкальная игра в <span data-site="city">Ижевске</span></p>
+      </div>
+      <nav aria-label="Меню в подвале">
+        <ul class="footer-nav">
+          <li><a href="./">Главная</a></li>
+          <li><a href="schedule/">Расписание игр</a></li>
+          <li><a href="./#how">Как играть</a></li>
+          <li><a href="./#about">О проекте</a></li>
+          <li><a href="./#corporate">Корпоративы</a></li>
+        </ul>
+      </nav>
+      <div class="footer-info">
+        <p><strong data-site="venue.name">НиСплетни Лаунж</strong><br><a data-map-link href="https://yandex.ru/maps/?text=%D0%98%D0%B6%D0%B5%D0%B2%D1%81%D0%BA%2C%20%D1%83%D0%BB.%20%D0%9C%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B0%20%D0%93%D0%BE%D1%80%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE%2C%20156" target="_blank" rel="noopener"><span data-site="venue.address">Ижевск, ул. Максима Горького, 156</span></a></p>
+        <ul class="footer-contacts" data-contacts></ul>
+        <p><a class="vk-link" data-site-href="vk.url" href="https://vk.ru/club241897850" target="_blank" rel="noopener">ВКонтакте</a></p>
+        <p data-privacy-footer hidden><a data-privacy-link href="#" target="_blank" rel="noopener">Политика обработки персональных данных</a></p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span data-year>2026</span> ПОПАДОС</p>
+    </div>
+  </footer>
+</body>
+</html>
